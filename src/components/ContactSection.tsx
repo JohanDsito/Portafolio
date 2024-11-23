@@ -144,7 +144,7 @@ export function ContactSection() {
             cada algoritmo una melodía que transforma el mundo.&quot;
           </blockquote>
           <p className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-sm text-gray-500 font-mono mb-6 dark:text-gray-400">
-            {'&lt;Encoding dreams into reality&gt;'}
+            {'<Encoding dreams into reality>'}
           </p>
         </section>
       </section>

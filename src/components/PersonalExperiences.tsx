@@ -76,7 +76,7 @@ export function PersonalExperiences() {
 
           <article className="max-w-3xl mx-auto text-center">
             <p className="text-white/90 dark:text-white/80 leading-relaxed">
-              En mi vida personal la música ah sido la encargada de llevarme por
+              En mi vida personal la música ha sido la encargada de llevarme por
               un camino distinto en el cual puedo expresarme libremente y crear a
               base de ritmos y melodías distintos tipos de pensamientos los cuales
               no pueden ser simplemente expresados con palabras, por lo cual es mi
