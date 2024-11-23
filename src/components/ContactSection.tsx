@@ -63,9 +63,8 @@ export function ContactSection() {
       </header>
 
       <section className="max-w-7xl mx-auto grid md:grid-cols-[1fr,auto,1fr] gap-12 items-start">
-        {/* Formulario de contacto */}
         <form onSubmit={handleSubmit} className="space-y-4 w-full">
-          <div className="relative">
+          <label className="relative block">
             <input
               type="text"
               placeholder="Nombre:"
@@ -76,8 +75,8 @@ export function ContactSection() {
               className="w-full p-3 bg-teal-50/50 dark:bg-teal-800/20 border-none rounded shadow-md placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-teal-600 text-black dark:text-white"
               required
             />
-          </div>
-          <div className="relative">
+          </label>
+          <label className="relative block">
             <input
               type="email"
               placeholder="Email:"
@@ -88,8 +87,8 @@ export function ContactSection() {
               className="w-full p-3 bg-teal-50/50 dark:bg-teal-800/20 border-none rounded shadow-md placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-teal-600 text-black dark:text-white"
               required
             />
-          </div>
-          <div className="relative">
+          </label>
+          <label className="relative block">
             <textarea
               placeholder="Observación:"
               value={formData.observation}
@@ -99,7 +98,7 @@ export function ContactSection() {
               className="w-full p-3 bg-teal-50/50 dark:bg-teal-800/20 border-none rounded shadow-md placeholder-gray-500 dark:placeholder-gray-400 min-h-[150px] focus:ring-2 focus:ring-teal-600 text-black dark:text-white"
               required
             />
-          </div>
+          </label>
           <button
             type="submit"
             className="w-full py-3 bg-teal-600 text-white font-semibold rounded shadow-md hover:bg-teal-700 transition-all"
@@ -113,7 +112,6 @@ export function ContactSection() {
           )}
         </form>
 
-        {/* Redes sociales */}
         <section className="flex flex-col items-start gap-6">
           {socialLinks.map((link, index) => (
             <a
@@ -132,7 +130,6 @@ export function ContactSection() {
           ))}
         </section>
 
-        {/* Sección del perfil */}
         <section className="text-center space-y-6">
           <figure className="relative w-56 h-56 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl -mt-20">
             <Image
@@ -143,11 +140,11 @@ export function ContactSection() {
             />
           </figure>
           <blockquote className="relative text-gray-800 italic dark:text-teal-100">
-            "Programar es componer sinfonías digitales: cada función una nota,
-            cada algoritmo una melodía que transforma el mundo."
+            &quot;Programar es componer sinfonías digitales: cada función una nota,
+            cada algoritmo una melodía que transforma el mundo.&quot;
           </blockquote>
           <p className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-sm text-gray-500 font-mono mb-6 dark:text-gray-400">
-            {'<Encoding dreams into reality>'}
+            {'&lt;Encoding dreams into reality&gt;'}
           </p>
         </section>
       </section>

@@ -42,8 +42,7 @@ export function PersonalExperiences() {
         </header>
 
         <section className="max-w-4xl mx-auto">
-          <div className="relative">
-            {/* Image Slider */}
+          <article className="relative">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               navigation
@@ -73,9 +72,8 @@ export function PersonalExperiences() {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
+          </article>
 
-          {/* Description */}
           <article className="max-w-3xl mx-auto text-center">
             <p className="text-white/90 dark:text-white/80 leading-relaxed">
               En mi vida personal la música ah sido la encargada de llevarme por
@@ -89,8 +87,7 @@ export function PersonalExperiences() {
           </article>
         </section>
 
-        {/* Improved Wave Decoration */}
-        <div className="absolute -bottom-32 left-0 right-0 h-48 md:h-56 lg:h-64">
+        <footer className="absolute -bottom-32 left-0 right-0 h-48 md:h-56 lg:h-64">
           <svg
             viewBox="0 0 1440 320"
             className="absolute bottom-0 w-full h-full"
@@ -102,7 +99,7 @@ export function PersonalExperiences() {
               d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
             ></path>
           </svg>
-        </div>
+        </footer>
       </section>
     </section>
   );

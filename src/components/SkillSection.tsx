@@ -1,4 +1,6 @@
-"use client";
+'use client';
+
+import Image from 'next/image';
 
 interface SkillItemProps {
   name: string;
@@ -8,10 +10,12 @@ interface SkillItemProps {
 export function SkillItem({ name, icon }: SkillItemProps) {
   return (
     <article className="flex flex-col items-center text-center transition-transform hover:scale-110">
-      <img
+      <Image
         src={icon}
         alt={`Ícono de ${name}`}
-        className="w-16 h-16 mb-4 transition-all duration-300 hover:shadow-lg"
+        width={64} // Equivalente a w-16 (16 * 4)
+        height={64} // Equivalente a h-16 (16 * 4)
+        className="mb-4 transition-all duration-300 hover:shadow-lg"
       />
       <p className="text-lg font-medium text-black dark:text-white">{name}</p>
     </article>
