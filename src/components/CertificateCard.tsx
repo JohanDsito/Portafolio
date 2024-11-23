@@ -9,14 +9,14 @@ interface CertificateCardProps {
 export function CertificateCard({ title, certificateUrl }: CertificateCardProps) {
   return (
     <article className="group relative transform perspective-1000 transition-transform duration-300 hover:scale-105">
-      <section className="bg-teal-400/20 backdrop-blur-sm p-6 rounded-lg shadow-lg transform-style-3d rotate-x-12 group-hover:rotate-x-0 transition-transform duration-300">
-        <h3 className="text-white text-sm mb-4 min-h-[60px]">
+      <section className="bg-teal-400/20 dark:bg-teal-800/20 backdrop-blur-sm p-6 rounded-lg shadow-lg transform-style-3d rotate-x-12 group-hover:rotate-x-0 transition-transform duration-300">
+        <h3 className="text-white dark:text-teal-100 text-sm mb-4 min-h-[60px]">
           {title}
         </h3>
         <footer>
           <Button
             variant="outline"
-            className="w-full bg-teal-500/20 text-white hover:bg-teal-500/30 border-teal-500/30"
+            className="w-full bg-teal-500/20 text-white hover:bg-teal-500/30 border-teal-500/30 dark:bg-teal-800/20 dark:text-teal-300 dark:hover:bg-teal-800/30 dark:border-teal-800/30"
             onClick={() => window.open(certificateUrl, '_blank')}
           >
             LINK CERTIFICADO
